@@ -256,10 +256,11 @@ The last one is 'home' referring to the initial plot.
 
 Following is an exercise that you must do.Please, pause the video and do the exercise. 
 
-  (I) Plot (sin(x)*sin(x))/x .
+      Plot (sin(x)*sin(x))/x.
+
       1. Save the plot by the sinsquarebyx.pdf in pdf format.
-      2. Zoom and find the maxima.
-      3. Bring it back to initial position.
+      #. Zoom and find the maxima.
+      #. Bring it back to initial position.
 
 .. L23
 
