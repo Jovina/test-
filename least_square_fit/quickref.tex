@@ -1,0 +1,15 @@
+Creating a matrix with all ones:\\
+{\ex \lstinline|    o = ones_like(l)|}
+
+Creating the A matrix:\\
+{\ex \lstinline|    A = array(l, ones_like(l)).T|}
+
+Computing least square:\\
+{\ex \lstinline|    result = lstsq(A, tsq)|}
+
+Obtaining the m and c values:\\
+{\ex \lstinline|    m, c = result[0]|}
+
+Computing the least square fit line:\\
+{\ex \lstinline|    lst_line = m * l + c|}
+

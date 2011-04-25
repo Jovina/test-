@@ -1,0 +1,17 @@
+*.html
+*.aux
+*.dvi
+*.log
+*.nav
+*.snm
+*.toc
+*.pdf
+*.vrb
+*.out
+*.sty
+*.pyc
+*.zip
+*.doc
+*~
+questions.rst
+mcqs.rst

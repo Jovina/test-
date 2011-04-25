@@ -1,0 +1,129 @@
+% Created 2010-11-10 Wed 10:46
+\documentclass[presentation]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[english]{babel} \usepackage{ae,aecompl}
+\usepackage{mathpazo,courier,euler} \usepackage[scaled=.95]{helvet}
+\usepackage{listings}
+\lstset{language=Python, basicstyle=\ttfamily\bfseries,
+commentstyle=\color{red}\itshape, stringstyle=\color{darkgreen},
+showstringspaces=false, keywordstyle=\color{blue}\bfseries}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{}
+\author{FOSSEE}
+\date{}
+
+\usetheme{Warsaw}\usecolortheme{default}\useoutertheme{infolines}\setbeamercovered{transparent}
+\begin{document}
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Outline}
+\label{sec-1}
+\begin{itemize}
+
+\item Defining strings\\
+\label{sec-1_1}%
+\item Concatenation\\
+\label{sec-1_2}%
+\item Accessing individual elements\\
+\label{sec-1_3}%
+\item Immutability of strings\\
+\label{sec-1_4}%
+\end{itemize} % ends low level
+\end{frame}
+\begin{frame}
+\frametitle{Question 1}
+\label{sec-2}
+
+  Obtain the string \texttt{\%\% -------------------- \%\%} (20 hyphens) without
+  typing out all the twenty hyphens.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 1}
+\label{sec-3}
+
+\lstset{language=Python}
+\begin{lstlisting}
+s = "%% " + "-"*20 + " %%"
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Question 2}
+\label{sec-4}
+
+  Given a string, \texttt{s} which is \texttt{Hello World} , what is the output of::
+\lstset{language=Python}
+\begin{lstlisting}
+s[-5] 
+s[-10]
+s[-15]
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 2}
+\label{sec-5}
+
+\lstset{language=Python}
+\begin{lstlisting}
+'W'
+'e'
+IndexError
+\end{lstlisting}
+\end{frame}
+\begin{frame}
+\frametitle{Summary}
+\label{sec-6}
+
+  In this tutorial we have learnt
+\begin{itemize}
+\item How to define strings
+\item Different ways of defining a string
+\item String concatenation and repetition
+\item Accessing individual elements of the string
+\item Immutability of strings
+\end{itemize}
+
+  
+\end{frame}
+\begin{frame}
+\frametitle{Thank you!}
+\label{sec-7}
+
+  \begin{block}{}
+  \begin{center}
+  This spoken tutorial has been produced by the
+  \textcolor{blue}{FOSSEE} team, which is funded by the 
+  \end{center}
+  \begin{center}
+    \textcolor{blue}{National Mission on Education through \\
+      Information \& Communication Technology \\ 
+      MHRD, Govt. of India}.
+  \end{center}  
+  \end{block}
+\end{frame}
+
+\end{document}

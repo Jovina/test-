@@ -1,0 +1,207 @@
+% Created 2010-12-18 Sat 12:23
+\documentclass[presentation]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{t1enc}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[english]{babel} \usepackage{ae,aecompl}
+\usepackage{mathpazo,courier,euler} \usepackage[scaled=.95]{helvet}
+\usepackage{listings}
+\lstset{language=Python, basicstyle=\ttfamily\bfseries,
+commentstyle=\color{red}\itshape, stringstyle=\color{darkgreen},
+showstringspaces=false, keywordstyle=\color{blue}\bfseries}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Getting Started -- \texttt{ipython}}
+\author{FOSSEE}
+\date{}
+
+\usetheme{Warsaw}\usecolortheme{default}\useoutertheme{infolines}\setbeamercovered{transparent}
+\begin{document}
+
+
+\begin{frame}
+  \frametitle{}
+    \begin{center}
+      \textcolor{blue}{Getting Started -- \texttt{ipython}}
+    \end{center}
+    \begin{center}
+      \includegraphics[scale=0.25]{../images/iitb-logo.png}\\
+      Developed by FOSSEE Team, IIT-Bombay. \\ 
+      Funded by National Mission on Education through ICT
+
+      MHRD, Govt. of India
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Objectives}
+\label{sec-1}
+At the end of this tutorial, you will be able to --
+\begin{itemize}
+\item invoke the \texttt{ipython} interpreter
+\item quit the \texttt{ipython} interpreter
+\item navigate the \texttt{ipython} session history 
+\item use tab-completion 
+\item look-up documentation of functions
+\item interrupt incomplete or incorrect commands
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 1}
+\label{sec-2}
+\begin{enumerate}
+\item Type \texttt{ab} and hit tab to see what happens.
+\item Next, just type \texttt{a} and hit tab to see what happens.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Solution 1}
+\label{sec-3}
+\begin{enumerate}
+\item \texttt{ab} tab completes to \texttt{abs}
+\item \texttt{a<tab>} gives us a list of all the commands starting
+  with a.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 2}
+\label{sec-4}
+
+  Look-up the documentation of \texttt{round} and see how to use it.
+\end{frame}
+\begin{frame}
+\frametitle{Solution 2}
+\label{sec-5}
+
+  \texttt{round?}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Question 3}
+\label{sec-6}
+
+  Check the output of
+\begin{verbatim}
+round(2.48)
+round(2.48, 1)
+round(2.48, 2)
+
+round(2.484)
+round(2.484, 1)
+round(2.484, 2)
+\end{verbatim}
+  Look-up the documentation of \texttt{round} and see how to use it.
+\end{frame}
+\begin{frame}
+\frametitle{Solution 3}
+\label{sec-7}
+
+  We get 2.0, 2.5 and 2.48, which are what we expect. 
+\end{frame}
+\begin{frame}
+\frametitle{Question 4}
+\label{sec-8}
+\begin{enumerate}
+\item Try typing \texttt{round(2.484}, and hit enter. and then cancel
+  the command using Ctrl-C.
+\item Then, type the command, \texttt{round(2.484, 2)} 
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 4}
+\label{sec-9}
+
+\begin{verbatim}
+round(2.484 
+^C
+
+round(2.484, 2)
+\end{verbatim}
+\end{frame}
+\begin{frame}
+\frametitle{Summary}
+\label{sec-10}
+In this tutorial, we have learnt to --
+\begin{itemize}
+\item invoke the IPython interpreter using \texttt{ipython} command 
+\item quit \texttt{ipython} using \texttt{Ctrl-D}
+\item navigate the history using arrow keys
+\item use tab-completion to work faster
+\item look up documentation of functions using \texttt{?}
+\item send keyboard interrupts using \texttt{Ctrl-C}
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Evaluation}
+\label{sec-11}
+
+\begin{itemize}
+\item \texttt{ipython} is a programming language similar to Python  \\
+ True or False\\ 
+ \vspace*{20pt}
+ \item   Which key combination quits \texttt{ipython}?\\
+ \vspace*{10pt}
+  * Ctrl + C\\
+  * Ctrl + D\\
+  * Alt + C\\
+  * Alt + D\\
+\end{itemize} 
+\end{frame}
+\begin{frame}
+\frametitle{Evaluation}
+\label{sec-12}
+
+\begin{itemize}
+\item Which character is used at the end of a command, in \texttt{ipython} to display the documentation\\ 
+\vspace*{10pt}
+ * \_\\
+ * ?\\
+ * !\\
+ * \&\\ 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Solutions}
+\label{sec-13}
+
+\begin{itemize}
+\item False
+\vspace*{10pt}
+\item Ctrl + C
+\vspace*{10pt}
+\item ?
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Acknowledgement}
+\label{sec-14}
+
+  \begin{block}{}
+  \begin{center}
+  \textcolor{blue}{\Large THANK YOU!} 
+  \end{center}
+  \end{block}
+\begin{block}{}
+  \begin{center}
+    For more Information, visit our website\\
+    \url{http://fossee.in/}
+  \end{center}  
+  \end{block}
+\end{frame}
+
+\end{document}

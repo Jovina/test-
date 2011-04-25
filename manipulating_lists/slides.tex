@@ -1,0 +1,152 @@
+% Created 2010-11-09 Tue 16:07
+\documentclass[presentation]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[english]{babel} \usepackage{ae,aecompl}
+\usepackage{mathpazo,courier,euler} \usepackage[scaled=.95]{helvet}
+\usepackage{listings}
+\lstset{language=Python, basicstyle=\ttfamily\bfseries,
+commentstyle=\color{red}\itshape, stringstyle=\color{darkgreen},
+showstringspaces=false, keywordstyle=\color{blue}\bfseries}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Manipulating Lists}
+\author{FOSSEE}
+\date{}
+
+\usetheme{Warsaw}\usecolortheme{default}\useoutertheme{infolines}\setbeamercovered{transparent}
+\begin{document}
+
+\maketitle
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Outline}
+\label{sec-1}
+
+  In this session we shall be looking at 
+\begin{itemize}
+\item Concatenating lists
+\item Obtaining parts of lists
+\item Sorting lists
+\item Reversing lists
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Question 1}
+\label{sec-2}
+
+  Obtain the primes less than 10, from the list \texttt{primes}. 
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 1}
+\label{sec-3}
+
+\lstset{language=Python}
+\begin{lstlisting}
+primes[0:4]
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Slicing}
+\label{sec-4}
+
+\lstset{language=Python}
+\begin{lstlisting}
+p[start:stop]
+\end{lstlisting}
+\begin{itemize}
+\item Returns all elements of \texttt{p} between \texttt{start} and \texttt{stop}
+\item The element with index equal to \texttt{stop} is \textbf{not} included.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Question 2}
+\label{sec-5}
+
+  Obtain all the multiples of three from the list \texttt{num}.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 2}
+\label{sec-6}
+
+\lstset{language=Python}
+\begin{lstlisting}
+num[::3]
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Question 3}
+\label{sec-7}
+
+  Given a list of marks of students in an examination, obtain a list
+  with marks in descending order.
+\lstset{language=Python}
+\begin{lstlisting}
+marks = [99, 67, 47, 100, 50, 75, 62]
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 3}
+\label{sec-8}
+
+\lstset{language=Python}
+\begin{lstlisting}
+sorted(marks)[::-1]
+\end{lstlisting}
+OR
+\lstset{language=Python}
+\begin{lstlisting}
+sorted(marks, reverse=True)
+\end{lstlisting}
+\end{frame}
+\begin{frame}
+\frametitle{Summary}
+\label{sec-9}
+
+  In this tutorial session we learnt
+\begin{itemize}
+\item Obtaining parts of lists using slicing and striding
+\item List concatenation
+\item Sorting lists
+\item Reversing lists
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Thank you!}
+\label{sec-10}
+
+  \begin{block}{}
+  \begin{center}
+  This spoken tutorial has been produced by the
+  \textcolor{blue}{FOSSEE} team, which is funded by the 
+  \end{center}
+  \begin{center}
+    \textcolor{blue}{National Mission on Education through \\
+      Information \& Communication Technology \\ 
+      MHRD, Govt. of India}.
+  \end{center}  
+  \end{block}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,137 @@
+% Created 2010-10-27 Wed 17:51
+\documentclass[presentation]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{t1enc}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[english]{babel} \usepackage{ae,aecompl}
+\usepackage{mathpazo,courier,euler} \usepackage[scaled=.95]{helvet}
+\usepackage{listings}
+\lstset{language=Python, basicstyle=\ttfamily\bfseries,
+commentstyle=\color{red}\itshape, stringstyle=\color{darkgreen},
+showstringspaces=false, keywordstyle=\color{blue}\bfseries}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Loops}
+\author{FOSSEE}
+\date{}
+
+\usetheme{Warsaw}\usecolortheme{default}\useoutertheme{infolines}\setbeamercovered{transparent}
+\begin{document}
+
+\maketitle
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Outline}
+\label{sec-1}
+
+\begin{itemize}
+\item Loop while a condition is true.
+\item Iterate over a sequence
+\item Breaking out of loops.
+\item Skipping iterations.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Question 1}
+\label{sec-2}
+
+  Write a \texttt{while} loop to print the squares of all the even
+  numbers below 10. 
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 1}
+\label{sec-3}
+
+\begin{verbatim}
+In []: i = 2
+
+In []:  while i<10:
+ ....:     print i*i
+ ....:     i += 2
+\end{verbatim}
+\end{frame}
+\begin{frame}
+\frametitle{Question 2}
+\label{sec-4}
+
+  Write a \texttt{for} loop to print the squares of all the even numbers
+  below 10.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 2}
+\label{sec-5}
+
+\begin{verbatim}
+In []: for n in range(2, 10, 2):
+ ....:     print n*n
+\end{verbatim}
+\end{frame}
+\begin{frame}
+\frametitle{Question 3}
+\label{sec-6}
+
+  Using the \texttt{continue} keyword modify the \texttt{for} loop to print the
+  squares of even numbers below 10, to print the squares of only
+  multiples of 4. (Do not modify the range function call.)
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Solution 3}
+\label{sec-7}
+
+\begin{verbatim}
+for n in range(2, 10, 2):
+    if n%4:
+        continue      
+    print n*n
+\end{verbatim}
+\end{frame}
+\begin{frame}
+\frametitle{Summary}
+\label{sec-8}
+
+  You should now be able to --
+\begin{itemize}
+\item use the \texttt{for} loop
+\item use the \texttt{while} loop
+\item Use \texttt{break}, \texttt{continue} and \texttt{pass} statements
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Thank you!}
+\label{sec-9}
+
+  \begin{block}{}
+  \begin{center}
+  This spoken tutorial has been produced by the
+  \textcolor{blue}{FOSSEE} team, which is funded by the 
+  \end{center}
+  \begin{center}
+    \textcolor{blue}{National Mission on Education through \\
+      Information \& Communication Technology \\ 
+      MHRD, Govt. of India}.
+  \end{center}  
+  \end{block}
+\end{frame}
+
+\end{document}
