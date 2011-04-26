@@ -422,7 +422,7 @@ Now we have everything we need to decorate a plot. but the plot would be
 incomplete if we can not set the limits of axes. This is possible using the
 button on the plot window.
 
-we shall look at how to get and set them from the terminal.We use ``xlim()'' and ``ylim()`` functions.
+we shall look at how to get and set them from the terminal.We use "xlim()" and "ylim()" functions.
 
 .. L35
   
@@ -433,7 +433,7 @@ we shall look at how to get and set them from the terminal.We use ``xlim()'' and
 
 .. R35
 
-We see that ``xlim`` function returns the current x axis limits and ylim
+We see that ``xlim`` function returns the current x axis limits and ``ylim``
 function returns the current y-axis limits.
 
 Let us look at how to set the limits.
@@ -513,10 +513,10 @@ Here are some self assessment questions for you to solve
 1. Draw a plot of cosine graph between -2pi to 2pi with line thickness 4.
 
 2. Read thorugh the documentation and find out is there a way to modify the
-    alignment of text in the command ``ylabel``.
+   alignment of text in the command ``ylabel``.
 
-   -Yes
-   -No
+   - Yes
+   - No
 
   
 3. How do you set the title as x^2-5x+6 in LaTex style formatting.
